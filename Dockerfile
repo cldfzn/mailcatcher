@@ -10,6 +10,6 @@ RUN apt-get remove -y libsqlite3-dev ruby-dev build-essential && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-EXPOSE 1025
+EXPOSE 25
 EXPOSE 1080
 CMD ["mailcatcher", "--smtp-port=25", "-f", "--ip=0.0.0.0"]
